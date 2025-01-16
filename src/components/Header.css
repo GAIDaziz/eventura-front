@@ -1,0 +1,56 @@
+/* src/components/Header.css */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  .register-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .login-btn {
+    background-color: #008CBA;
+    color: white;
+  }
+  
