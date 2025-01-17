@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SignUp.css'; // Assurez-vous que les styles sont bien importés
-import API_URL from '../config';
+import API_URL from '../../utils/config';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -48,6 +48,8 @@ const SignUp = () => {
     <div className="signup-container">
       <h2>Inscription</h2>
       <form onSubmit={handleSubmit}>
+      {success && <p className="success-message">{success}</p>}
+      {error && <p className="error-message">{error}</p>}
         <div>
           <label htmlFor="name">Nom </label>
           <input
